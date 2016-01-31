@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Certege';
+    src: local('Certege'), url('certege.woff2') format('woff2'), url('certege.woff') format('woff'), url('certege.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
