@@ -5,9 +5,13 @@ $(document).ready(function () {
     $('.select2').css('width', '100%');
     $('.dict-select').select2('val', '');
     $('.dict-select').change(function () {
+        setTimeout(function () {
+            $('select2-container-active').removeClass('select2-container-active');
+            $(':focus').blur();
+        }, 1);
+
         var findText = function (done) {
             var id = $('.dict-select').val();
-            console.log("Selected id = " + id);
             for (var i = 0; i < data.length; i++) {
                 if (data[i].id == id) {
                     $('#form1').html(data[i].form1);
